@@ -8,8 +8,9 @@ import time
 # config
 merchant_Name = 'AMS'
 
-# driver = webdriver.EdgeOptions()
 driver = webdriver.Chrome()
+# options = webdriver.EdgeOptions()
+# driver = webdriver.Edge(options=options)
 driver.get(
     "")
 
