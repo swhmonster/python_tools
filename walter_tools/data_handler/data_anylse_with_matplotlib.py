@@ -14,7 +14,7 @@ o = ODPS(
 
 options.sql.settings = {"odps.sql.submit.mode": "script", "odps.sql.hive.compatible": "true"}
 
-with open('sqls/overdue_in_transit.json') as f:
+with open('sqls/congfig_sql_template.json') as f:
     data = json.load(f)
 
 sql = data['sql']
