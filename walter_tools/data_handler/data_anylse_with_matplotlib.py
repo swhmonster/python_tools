@@ -14,24 +14,30 @@ o = ODPS(
 
 options.sql.settings = {"odps.sql.submit.mode": "script", "odps.sql.hive.compatible": "true"}
 
-with open('sqls/congfig_sql_template.json') as f:
+with open('sqls/overdue_in_transit.json') as f:
     data = json.load(f)
 
 sql = data['sql']
 print(sql)
+print('====================================================================================')
 
 # sql查询与结果读取
 result = o.execute_sql(sql)
+print(result.get_logview_address())
+print('====================================================================================')
 x_axis_list = []
 y_axis_list = []
 df_dict = {}
 with result.open_reader() as reader:
     for record in reader:
-        print(record)
+        # print(record)
         x_axis_list.append(int(record[data['x-axis']]))
         y_axis_list.append(float(record[data['y-axis']]))
-df_dict.update({'x-axis': x_axis_list})
-df_dict.update({'y-axis': y_axis_list})
+print(x_axis_list)
+print('====================================================================================')
+print(y_axis_list)
+df_dict.update({'x-axis':x_axis_list})
+df_dict.update({'y-axis':y_axis_list})
 
 # 绘制图表
 df = pd.DataFrame(df_dict)
