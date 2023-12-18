@@ -1,0 +1,8 @@
+{
+    "title":"图标标题",
+    "x-axis":"X轴取值字段",
+    "x-axis-label":"X轴名称标签",
+    "y-axis":"Y轴取值字段",
+    "y-axis-label":"Y轴名称标签",
+    "sql":"不支持换行，请放在一行：select * from table"
+}
