@@ -36,8 +36,8 @@ with result.open_reader() as reader:
 print(x_axis_list)
 print('====================================================================================')
 print(y_axis_list)
-df_dict.update({'x-axis':x_axis_list})
-df_dict.update({'y-axis':y_axis_list})
+df_dict.update({'x-axis': x_axis_list})
+df_dict.update({'y-axis': y_axis_list})
 
 # 绘制图表
 df = pd.DataFrame(df_dict)
