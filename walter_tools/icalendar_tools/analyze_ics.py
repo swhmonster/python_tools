@@ -8,3 +8,4 @@ for component in cal.walk():
     if component.name == "VEVENT":
         print("Summary: ", component.get('summary'))
         print("Start: ", component.get('dtstart').dt)
+e
