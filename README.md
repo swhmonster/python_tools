@@ -8,6 +8,7 @@
 6. Tensorflow Tools
 7. Twilio Message Sending Tools
 8. Bluetooth Tools
+9. Icalendar Tools
 
 # python 脚本工具
 1. 数据分析工具
@@ -18,3 +19,4 @@
 6. 机器学习工具：基于Tensorflow
 7. 短信发送工具：基于Twilio
 8. 蓝牙操作工具：基于Bleak、PyBluez
+9. 日历.ics文件解析工具：基于icalendar
