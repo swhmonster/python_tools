@@ -20,3 +20,4 @@
 7. 短信发送工具：基于Twilio
 8. 蓝牙操作工具：基于Bleak、PyBluez
 9. 日历.ics文件解析工具：基于icalendar
+10. 二维码生成解析工具：基于qrcode
