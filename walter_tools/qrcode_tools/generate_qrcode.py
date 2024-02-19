@@ -19,5 +19,5 @@ qr.make(fit=True)
 img = qr.make_image(fill='black', back_color='white')
 
 # 保存到文件或显示
-# img.save("example_qrcode.png")
+img.save("example_qrcode.png")
 img.show()  # 如果要直接在默认图片查看器中查看
